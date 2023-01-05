@@ -1,0 +1,23 @@
+.todos-wrapper {
+  padding: 1rem;
+
+  ul {
+    list-style: none;
+  }
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  padding: .25rem .5rem;
+  background-color: #2596be;
+  color: white;
+  border-radius: 0.125rem;
+  margin-inline: 0.5rem;
+}
+
+.add {
+  background-color: lightcoral;
+  padding: .75rem;
+  float: right;
+}

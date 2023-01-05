@@ -1,0 +1,17 @@
+<form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+  <label for="email" [ngClass]="loginForm.controls.email.touched && loginForm.controls.email.invalid ? 'invalid-input' : ''">
+    <span>
+      Email address
+    </span>
+    <input required type="email" formControlName="email">
+  </label>
+
+  <label for="password" [ngClass]="loginForm.controls.password.touched && loginForm.controls.password.invalid ? 'invalid-input' : ''">
+    <span>
+      Password
+    </span>
+    <input required type="password" formControlName="password">
+  </label>
+
+  <button type="submit">Login</button>
+</form>

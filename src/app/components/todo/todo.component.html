@@ -1,0 +1,8 @@
+<div class="card" [ngClass]="todo.completed ? 'completed' : ''">
+  <span>
+    {{ todo.completed ? 'Completed' : 'Not Completed' }}
+  </span>
+  <span>
+    {{todo.title}}
+  </span>
+</div>

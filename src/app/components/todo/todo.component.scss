@@ -1,0 +1,18 @@
+.card {
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 40px;
+  font-size: 16px;
+  margin-block: 15px;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin-inline: auto;
+  flex-direction: column;
+
+  &.completed {
+    border: 2px solid green;
+    background-color: lightblue;
+  }
+}

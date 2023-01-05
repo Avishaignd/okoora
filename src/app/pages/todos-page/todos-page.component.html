@@ -1,0 +1,29 @@
+<div class="todos-wrapper container">
+
+  <span class="filters">
+    <label for="limit">
+      <span>
+        Limit todos
+      </span>
+      <input required type="number" [formControl]="limitTodos">
+    </label>
+    <button (click)="limitTodosAmount(limitTodos.value!)">
+      Submit
+    </button>
+
+    <label for="">
+      Filter Completed Todos
+      <input type="checkbox" name="" id="" [formControl]="filterTodos" (change)="filterCompleted()">
+    </label>
+  </span>
+
+  <button class="add" (click)="addTodo()">
+    Add Todo
+  </button>
+
+  <ul>
+    <li *ngFor="let item of todosArray">
+      <app-todo [todo]="item"></app-todo>
+    </li>
+  </ul>
+</div>
